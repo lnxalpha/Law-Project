@@ -1,0 +1,9 @@
+streamlit
+pytesseract
+Pillow
+opencv-python
+nltk
+python-docx
+PyPDF2
+jinja2
+numpy
