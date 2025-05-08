@@ -13,8 +13,12 @@ from jinja2 import Environment
 import cv2
 import numpy as np
 
-# Ensure NLTK is set up
-nltk.download('punkt')
+# Check if the 'punkt' resource is downloaded, if not, download it
+try:
+    nltk.data.find('tokenizers/punkt')
+except LookupError:
+    nltk.download('punkt')
+
 
 def preprocess_image(image):
     """Enhance image quality for better OCR results"""
