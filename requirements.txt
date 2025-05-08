@@ -10,3 +10,10 @@ numpy
 tesseract-ocr
 libgl1
 
+
+
+
+
+
+
+
