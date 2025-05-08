@@ -7,7 +7,6 @@ python-docx
 PyPDF2
 jinja2
 numpy
-cv2
 tesseract-ocr
 libgl1
 
