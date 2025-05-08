@@ -16,8 +16,10 @@ import numpy as np
 # Check if the 'punkt' resource is downloaded, if not, download it
 try:
     nltk.data.find('tokenizers/punkt')
+    nltk.data.find('tokenizers/punkt_tab')
 except LookupError:
-    nltk.download('punkt')
+    nltk.download('punkt', quiet=True)
+    nltk.download('punkt_tab', quiet=True)
 
 
 def preprocess_image(image):
